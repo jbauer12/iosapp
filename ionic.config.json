@@ -1,0 +1,8 @@
+{
+  "name": "YouCan(t)HearImages",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "26c2ee14"
+}

@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-card-header style="width: 100%;">
+          <ion-card-title style="display: flex; justify-content: center;">
+            Knipse ein Bild und höre es dir an!
+          </ion-card-title>
+
+        </ion-card-header>
+      </ion-row>
+
+      <ion-card-content style="display: grid; justify-items: center; height:100vh;">
+        <img *ngIf="this.photoService.photo" style="height: 200px;" [src]="this.photoService.photo.webviewPath" />
+        <ion-icon style="height: 300px; width: 300px;" *ngIf="!this.photoService.photo" name="image-outline"></ion-icon>
+        <div style="width: 100%; display: flex; justify-content: center; ">
+
+          <ion-fab-button (click)="take_picture()">
+            <ion-icon name="camera"></ion-icon>
+          </ion-fab-button>
+        </div>
+        <div style="background-color: beige; height:fit-content" > <audio *ngIf="music" id="player" [src]="music" controls></audio>
+        </div>
+
+      </ion-card-content>
+      <div style="display: grid; justify-items: center;">
+      </div>
+    </ion-grid>
+
+  </ion-card>
+
+  <div>
+  </div>
+</ion-content>
