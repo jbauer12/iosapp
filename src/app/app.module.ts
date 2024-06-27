@@ -5,6 +5,7 @@ import { IonicStorageModule } from '@ionic/storage-angular';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { Media, MediaObject } from '@awesome-cordova-plugins/media/ngx';
 import { File } from '@awesome-cordova-plugins/file/ngx';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
